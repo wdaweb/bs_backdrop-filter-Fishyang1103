@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  background: url(https://images.unsplash.com/photo-1550951298-5c7b95a66bfc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1033&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: scroll;
+}
+
+.box {
+  width: 300px;
+  height: 500px;
+}
+
+.box-radius-first {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.box-radius-last {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* .box:nth-child(2n) {
+  border-left: 0px;
+  border-right: 0px;
+} */
+
+.grayscale {
+  backdrop-filter: grayscale(1);
+}
+
+.brightness {
+  backdrop-filter: brightness(1.5);
+}
+
+.blur {
+  backdrop-filter: blur(5px);
+}
+
+.contrast {
+  backdrop-filter: contrast(0.8);
+}
+
+.invert {
+  backdrop-filter: invert(0.7);
+}
+
+.opacity {
+  backdrop-filter: opacity(0.4);
+}
+
+.sepia {
+  backdrop-filter: sepia(0.4);
+}
+
+.saturate {
+  backdrop-filter: saturate(1.8);
+}
+
+.hue-rotate {
+  backdrop-filter: hue-rotate(120deg);
+}
+
+@media(max-width:576px) {
+  .container-fluid {
+    padding: 20px 0px;
+  }
+
+  .box {
+    width: 300px;
+    height: 150px;
+  }
+
+  .row {
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+
+  .box-radius-first {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+  }
+
+  .box-radius-last {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+}
